@@ -1,10 +1,9 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Document</title>
-    </head>
-    <body>
-        <h2>hello {{name|capitalize}} </h2> 
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>Hello, {{name|capitalize}}!</h1>
+    </div>
+</div>
+{% endblock %}
